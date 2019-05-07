@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<!-- <style>
+    table tr:nth-of-type(1) td:nth-of-type(1) {
+        background-color: red;
+    }
+</style> -->
+<body>
+    <h1>小豬豬命名</h1>
+    <h2>0816</h2>
+    <table id="myTable" border="1">
+        <script>
+
+            var nameArray=[['青','幸','欣','沁','采','宜','艾','佳','函','果','沂','佩','和','汶','明','旻','昀','念','典','亞','依','宛','雨'],
+            ['璇','縈','臻','蒔','蓉','樺','澐','潔','穆','霖','蓁']];
+            for (var i = 0; i < nameArray[0].length; i++) {
+                document.write("<tr>" );
+                for (var j = 0; j < nameArray[1].length; j++) {
+                    
+                        document.write("<td> 吳"  +   nameArray[0][i] + nameArray[1][j] +"</td>");
+                    
+                  
+                }
+                document.write("</tr>");
+            }
+
+            // console.log(nameArray[0].length);
+            
+            console.log(j);
+            
+
+
+            var randomX  = 1;
+            var  randomY = 1;
+           
+            function nameFunction(){
+                
+                document.getElementById("myTable").rows[randomX].cells[randomY].style.backgroundColor = "white";
+                 randomX = Math.floor(Math.random() * i );
+                console.log(j);
+                //  console.log(nameArray[1].length);
+                //  console.log(randomX);
+                 randomY = Math.floor(Math.random() * j );
+                console.log(i);
+                 console.log(nameArray[0].length);
+                //  console.log(randomY);
+                document.getElementById("myTable").rows[randomX].cells[randomY].style.backgroundColor = "orange";
+                var selectName = document.getElementById("myTable").rows[randomX].cells[randomY].textContent;
+                document.getElementById("createName").innerHTML= selectName;
+
+            }
+        </script>
+    </table>
+    <button id="name016" onclick="nameFunction()">Give me a name</button>
+    <h3 id="createName"></h3>
+    
+<!-- 
+    <script>
+        function nameFunction(){
+            alert('123');
+        }
+    
+    </script> -->
+
+
+
+
+
+
+
+
+
+    <!-- <h2>16</h2>
+    <table border="1">
+        <script>
+
+            var nameArray = [['璇', '縈', '臻', '蒔', '蓉', '樺', '澐', '潔', '穆', '霖', '臻'],
+            ['璇', '縈', '臻', '蒔', '蓉', '樺', '澐', '潔', '穆', '霖', '臻']];
+            for (var i = 0; i < nameArray[0].length; i++) {
+                document.write("<tr>");
+                for (var j = 0; j < nameArray[1].length; j++) {
+
+                    document.write("<td> 吳" + nameArray[0][i] + nameArray[1][j] + "</td>");
+
+
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table> -->
+
+    <h2>0816</h2>
+    <h2>0816</h2>
+    <h2>0816</h2>
+    <h2>0816</h2>
+
+
+
+</body>
+</html>
+<!-- 
+吳青璇 吳青臻 吳青潔
+吳幸璇 吳幸臻 吳幸潔
+吳欣璇 吳欣臻 吳欣潔
+
+0010 0011 0112 0013
+0110 0111 0112 0113
+0210 0211 0212 0213
+ -->
